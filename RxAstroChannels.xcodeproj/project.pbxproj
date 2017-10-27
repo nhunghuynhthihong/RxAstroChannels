@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B25F7AD1FA2D768008972CB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B25F7AC1FA2D768008972CB /* Constant.swift */; };
+		6B25F7AF1FA2DB51008972CB /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B25F7AE1FA2DB51008972CB /* UIImageExtension.swift */; };
+		6B25F7B11FA2DC05008972CB /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B25F7B01FA2DC05008972CB /* DateExtension.swift */; };
+		6B25F7B31FA2DC28008972CB /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B25F7B21FA2DC28008972CB /* DateFormatterExtension.swift */; };
+		6B25F7B71FA2DCED008972CB /* Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B25F7B61FA2DCED008972CB /* Serialization.swift */; };
+		6B25F7B91FA2E1E2008972CB /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B25F7B81FA2E1E2008972CB /* DataManagement.swift */; };
+		6BB37C941F9EE49C004DC89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB37C931F9EE49C004DC89B /* AppDelegate.swift */; };
+		6BB37C961F9EE49C004DC89B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB37C951F9EE49C004DC89B /* ViewController.swift */; };
+		6BB37C991F9EE49C004DC89B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB37C971F9EE49C004DC89B /* Main.storyboard */; };
+		6BB37C9B1F9EE49C004DC89B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BB37C9A1F9EE49C004DC89B /* Assets.xcassets */; };
+		6BB37C9E1F9EE49C004DC89B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB37C9C1F9EE49C004DC89B /* LaunchScreen.storyboard */; };
+		6BB37CA91F9EE49D004DC89B /* RxAstroChannelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB37CA81F9EE49D004DC89B /* RxAstroChannelsTests.swift */; };
+		6BB37CB41F9EE49D004DC89B /* RxAstroChannelsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB37CB31F9EE49D004DC89B /* RxAstroChannelsUITests.swift */; };
+		6BB37CC31F9EE780004DC89B /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB37CC21F9EE780004DC89B /* Channel.swift */; };
+		6BB37CC51F9EE9DD004DC89B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB37CC41F9EE9DD004DC89B /* Event.swift */; };
+		6BB37CC91F9EEB9A004DC89B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB37CC81F9EEB9A004DC89B /* CollectionViewCell.swift */; };
+		6BB37CCD1F9EF7D4004DC89B /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB37CCC1F9EF7D4004DC89B /* CollectionViewModel.swift */; };
+		6BB37CD51F9F16B2004DC89B /* AstroAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB37CD41F9F16B2004DC89B /* AstroAPI.swift */; };
+		6BB37CDB1F9F267F004DC89B /* ChannelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB37CDA1F9F267F004DC89B /* ChannelService.swift */; };
+		6BB37CDF1FA0879F004DC89B /* CustomCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB37CDE1FA0879F004DC89B /* CustomCollectionViewLayout.swift */; };
+		8D88D36F7AD521C83440CBAB /* Pods_RxAstroChannels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9BD070A545C8C1BB1A58BE /* Pods_RxAstroChannels.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BB37CA51F9EE49D004DC89B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BB37C881F9EE49C004DC89B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BB37C8F1F9EE49C004DC89B;
+			remoteInfo = RxAstroChannels;
+		};
+		6BB37CB01F9EE49D004DC89B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BB37C881F9EE49C004DC89B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BB37C8F1F9EE49C004DC89B;
+			remoteInfo = RxAstroChannels;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BB1FA75B17BC31E76BA4D47 /* Pods-RxAstroChannels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAstroChannels.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxAstroChannels/Pods-RxAstroChannels.release.xcconfig"; sourceTree = "<group>"; };
+		6B25F7AC1FA2D768008972CB /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		6B25F7AE1FA2DB51008972CB /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		6B25F7B01FA2DC05008972CB /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		6B25F7B21FA2DC28008972CB /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
+		6B25F7B61FA2DCED008972CB /* Serialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serialization.swift; sourceTree = "<group>"; };
+		6B25F7B81FA2E1E2008972CB /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
+		6BB37C901F9EE49C004DC89B /* RxAstroChannels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxAstroChannels.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BB37C931F9EE49C004DC89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6BB37C951F9EE49C004DC89B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6BB37C981F9EE49C004DC89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6BB37C9A1F9EE49C004DC89B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BB37C9D1F9EE49C004DC89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6BB37C9F1F9EE49C004DC89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BB37CA41F9EE49D004DC89B /* RxAstroChannelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxAstroChannelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BB37CA81F9EE49D004DC89B /* RxAstroChannelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAstroChannelsTests.swift; sourceTree = "<group>"; };
+		6BB37CAA1F9EE49D004DC89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BB37CAF1F9EE49D004DC89B /* RxAstroChannelsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxAstroChannelsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BB37CB31F9EE49D004DC89B /* RxAstroChannelsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAstroChannelsUITests.swift; sourceTree = "<group>"; };
+		6BB37CB51F9EE49D004DC89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BB37CC21F9EE780004DC89B /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		6BB37CC41F9EE9DD004DC89B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		6BB37CC81F9EEB9A004DC89B /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		6BB37CCC1F9EF7D4004DC89B /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
+		6BB37CD41F9F16B2004DC89B /* AstroAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroAPI.swift; sourceTree = "<group>"; };
+		6BB37CDA1F9F267F004DC89B /* ChannelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelService.swift; sourceTree = "<group>"; };
+		6BB37CDE1FA0879F004DC89B /* CustomCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayout.swift; sourceTree = "<group>"; };
+		8F9BD070A545C8C1BB1A58BE /* Pods_RxAstroChannels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxAstroChannels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFFC428207AAEC8180342607 /* Pods-RxAstroChannels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAstroChannels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxAstroChannels/Pods-RxAstroChannels.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BB37C8D1F9EE49C004DC89B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D88D36F7AD521C83440CBAB /* Pods_RxAstroChannels.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BB37CA11F9EE49D004DC89B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BB37CAC1F9EE49D004DC89B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5244EBD3ECE924F39269DF39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFFC428207AAEC8180342607 /* Pods-RxAstroChannels.debug.xcconfig */,
+				1BB1FA75B17BC31E76BA4D47 /* Pods-RxAstroChannels.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6BB37C871F9EE49C004DC89B = {
+			isa = PBXGroup;
+			children = (
+				6BB37C921F9EE49C004DC89B /* RxAstroChannels */,
+				6BB37CA71F9EE49D004DC89B /* RxAstroChannelsTests */,
+				6BB37CB21F9EE49D004DC89B /* RxAstroChannelsUITests */,
+				6BB37C911F9EE49C004DC89B /* Products */,
+				AF75ECC8DB3D1C1E38C7C14A /* Frameworks */,
+				5244EBD3ECE924F39269DF39 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6BB37C911F9EE49C004DC89B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BB37C901F9EE49C004DC89B /* RxAstroChannels.app */,
+				6BB37CA41F9EE49D004DC89B /* RxAstroChannelsTests.xctest */,
+				6BB37CAF1F9EE49D004DC89B /* RxAstroChannelsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BB37C921F9EE49C004DC89B /* RxAstroChannels */ = {
+			isa = PBXGroup;
+			children = (
+				6BB37CD01F9EFF43004DC89B /* Common Classes */,
+				6BB37CCA1F9EF7AF004DC89B /* ViewModels */,
+				6BB37CC61F9EEA7C004DC89B /* ViewControllers */,
+				6BB37CC11F9EE76F004DC89B /* Models */,
+				6BB37C931F9EE49C004DC89B /* AppDelegate.swift */,
+				6BB37C971F9EE49C004DC89B /* Main.storyboard */,
+				6BB37C9A1F9EE49C004DC89B /* Assets.xcassets */,
+				6BB37C9C1F9EE49C004DC89B /* LaunchScreen.storyboard */,
+				6BB37C9F1F9EE49C004DC89B /* Info.plist */,
+			);
+			path = RxAstroChannels;
+			sourceTree = "<group>";
+		};
+		6BB37CA71F9EE49D004DC89B /* RxAstroChannelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BB37CA81F9EE49D004DC89B /* RxAstroChannelsTests.swift */,
+				6BB37CAA1F9EE49D004DC89B /* Info.plist */,
+			);
+			path = RxAstroChannelsTests;
+			sourceTree = "<group>";
+		};
+		6BB37CB21F9EE49D004DC89B /* RxAstroChannelsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6BB37CB31F9EE49D004DC89B /* RxAstroChannelsUITests.swift */,
+				6BB37CB51F9EE49D004DC89B /* Info.plist */,
+			);
+			path = RxAstroChannelsUITests;
+			sourceTree = "<group>";
+		};
+		6BB37CC11F9EE76F004DC89B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6BB37CDC1F9F3508004DC89B /* Network */,
+				6BB37CD71F9F2653004DC89B /* Services */,
+				6BB37CD61F9F2647004DC89B /* Entities */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6BB37CC61F9EEA7C004DC89B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6BB37C951F9EE49C004DC89B /* ViewController.swift */,
+				6BB37CDD1FA0878B004DC89B /* CustomViews */,
+				6BB37CC71F9EEA86004DC89B /* Cell */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6BB37CC71F9EEA86004DC89B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6BB37CC81F9EEB9A004DC89B /* CollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6BB37CCA1F9EF7AF004DC89B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6BB37CCC1F9EF7D4004DC89B /* CollectionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6BB37CD01F9EFF43004DC89B /* Common Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6B25F7B61FA2DCED008972CB /* Serialization.swift */,
+				6B25F7AC1FA2D768008972CB /* Constant.swift */,
+				6B25F7AE1FA2DB51008972CB /* UIImageExtension.swift */,
+				6B25F7B01FA2DC05008972CB /* DateExtension.swift */,
+				6B25F7B21FA2DC28008972CB /* DateFormatterExtension.swift */,
+			);
+			path = "Common Classes";
+			sourceTree = "<group>";
+		};
+		6BB37CD61F9F2647004DC89B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				6BB37CC21F9EE780004DC89B /* Channel.swift */,
+				6BB37CC41F9EE9DD004DC89B /* Event.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		6BB37CD71F9F2653004DC89B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6BB37CDA1F9F267F004DC89B /* ChannelService.swift */,
+				6B25F7B81FA2E1E2008972CB /* DataManagement.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6BB37CDC1F9F3508004DC89B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6BB37CD41F9F16B2004DC89B /* AstroAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6BB37CDD1FA0878B004DC89B /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				6BB37CDE1FA0879F004DC89B /* CustomCollectionViewLayout.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		AF75ECC8DB3D1C1E38C7C14A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F9BD070A545C8C1BB1A58BE /* Pods_RxAstroChannels.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BB37C8F1F9EE49C004DC89B /* RxAstroChannels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BB37CB81F9EE49D004DC89B /* Build configuration list for PBXNativeTarget "RxAstroChannels" */;
+			buildPhases = (
+				58F9CA87E600C281D1A7DDE0 /* [CP] Check Pods Manifest.lock */,
+				6BB37C8C1F9EE49C004DC89B /* Sources */,
+				6BB37C8D1F9EE49C004DC89B /* Frameworks */,
+				6BB37C8E1F9EE49C004DC89B /* Resources */,
+				80882987D3160C206F09FEF5 /* [CP] Embed Pods Frameworks */,
+				6DFA12727EE53A28B818C64F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxAstroChannels;
+			productName = RxAstroChannels;
+			productReference = 6BB37C901F9EE49C004DC89B /* RxAstroChannels.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BB37CA31F9EE49D004DC89B /* RxAstroChannelsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BB37CBB1F9EE49D004DC89B /* Build configuration list for PBXNativeTarget "RxAstroChannelsTests" */;
+			buildPhases = (
+				6BB37CA01F9EE49D004DC89B /* Sources */,
+				6BB37CA11F9EE49D004DC89B /* Frameworks */,
+				6BB37CA21F9EE49D004DC89B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BB37CA61F9EE49D004DC89B /* PBXTargetDependency */,
+			);
+			name = RxAstroChannelsTests;
+			productName = RxAstroChannelsTests;
+			productReference = 6BB37CA41F9EE49D004DC89B /* RxAstroChannelsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6BB37CAE1F9EE49D004DC89B /* RxAstroChannelsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BB37CBE1F9EE49D004DC89B /* Build configuration list for PBXNativeTarget "RxAstroChannelsUITests" */;
+			buildPhases = (
+				6BB37CAB1F9EE49D004DC89B /* Sources */,
+				6BB37CAC1F9EE49D004DC89B /* Frameworks */,
+				6BB37CAD1F9EE49D004DC89B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BB37CB11F9EE49D004DC89B /* PBXTargetDependency */,
+			);
+			name = RxAstroChannelsUITests;
+			productName = RxAstroChannelsUITests;
+			productReference = 6BB37CAF1F9EE49D004DC89B /* RxAstroChannelsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BB37C881F9EE49C004DC89B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Candice H";
+				TargetAttributes = {
+					6BB37C8F1F9EE49C004DC89B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					6BB37CA31F9EE49D004DC89B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6BB37C8F1F9EE49C004DC89B;
+					};
+					6BB37CAE1F9EE49D004DC89B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6BB37C8F1F9EE49C004DC89B;
+					};
+				};
+			};
+			buildConfigurationList = 6BB37C8B1F9EE49C004DC89B /* Build configuration list for PBXProject "RxAstroChannels" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BB37C871F9EE49C004DC89B;
+			productRefGroup = 6BB37C911F9EE49C004DC89B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BB37C8F1F9EE49C004DC89B /* RxAstroChannels */,
+				6BB37CA31F9EE49D004DC89B /* RxAstroChannelsTests */,
+				6BB37CAE1F9EE49D004DC89B /* RxAstroChannelsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BB37C8E1F9EE49C004DC89B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB37C9E1F9EE49C004DC89B /* LaunchScreen.storyboard in Resources */,
+				6BB37C9B1F9EE49C004DC89B /* Assets.xcassets in Resources */,
+				6BB37C991F9EE49C004DC89B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BB37CA21F9EE49D004DC89B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BB37CAD1F9EE49D004DC89B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58F9CA87E600C281D1A7DDE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6DFA12727EE53A28B818C64F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxAstroChannels/Pods-RxAstroChannels-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80882987D3160C206F09FEF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxAstroChannels/Pods-RxAstroChannels-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BB37C8C1F9EE49C004DC89B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB37CCD1F9EF7D4004DC89B /* CollectionViewModel.swift in Sources */,
+				6B25F7B11FA2DC05008972CB /* DateExtension.swift in Sources */,
+				6B25F7B71FA2DCED008972CB /* Serialization.swift in Sources */,
+				6B25F7B31FA2DC28008972CB /* DateFormatterExtension.swift in Sources */,
+				6BB37CC91F9EEB9A004DC89B /* CollectionViewCell.swift in Sources */,
+				6B25F7B91FA2E1E2008972CB /* DataManagement.swift in Sources */,
+				6BB37CC51F9EE9DD004DC89B /* Event.swift in Sources */,
+				6BB37C961F9EE49C004DC89B /* ViewController.swift in Sources */,
+				6BB37CDB1F9F267F004DC89B /* ChannelService.swift in Sources */,
+				6BB37CC31F9EE780004DC89B /* Channel.swift in Sources */,
+				6BB37CD51F9F16B2004DC89B /* AstroAPI.swift in Sources */,
+				6B25F7AF1FA2DB51008972CB /* UIImageExtension.swift in Sources */,
+				6BB37CDF1FA0879F004DC89B /* CustomCollectionViewLayout.swift in Sources */,
+				6BB37C941F9EE49C004DC89B /* AppDelegate.swift in Sources */,
+				6B25F7AD1FA2D768008972CB /* Constant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BB37CA01F9EE49D004DC89B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB37CA91F9EE49D004DC89B /* RxAstroChannelsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BB37CAB1F9EE49D004DC89B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB37CB41F9EE49D004DC89B /* RxAstroChannelsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BB37CA61F9EE49D004DC89B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BB37C8F1F9EE49C004DC89B /* RxAstroChannels */;
+			targetProxy = 6BB37CA51F9EE49D004DC89B /* PBXContainerItemProxy */;
+		};
+		6BB37CB11F9EE49D004DC89B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BB37C8F1F9EE49C004DC89B /* RxAstroChannels */;
+			targetProxy = 6BB37CB01F9EE49D004DC89B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6BB37C971F9EE49C004DC89B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BB37C981F9EE49C004DC89B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6BB37C9C1F9EE49C004DC89B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BB37C9D1F9EE49C004DC89B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BB37CB61F9EE49D004DC89B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6BB37CB71F9EE49D004DC89B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BB37CB91F9EE49D004DC89B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFFC428207AAEC8180342607 /* Pods-RxAstroChannels.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RxAstroChannels/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nhung.RxAstroChannels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BB37CBA1F9EE49D004DC89B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB1FA75B17BC31E76BA4D47 /* Pods-RxAstroChannels.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RxAstroChannels/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nhung.RxAstroChannels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6BB37CBC1F9EE49D004DC89B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RxAstroChannelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nhung.RxAstroChannelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxAstroChannels.app/RxAstroChannels";
+			};
+			name = Debug;
+		};
+		6BB37CBD1F9EE49D004DC89B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RxAstroChannelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nhung.RxAstroChannelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxAstroChannels.app/RxAstroChannels";
+			};
+			name = Release;
+		};
+		6BB37CBF1F9EE49D004DC89B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RxAstroChannelsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nhung.RxAstroChannelsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RxAstroChannels;
+			};
+			name = Debug;
+		};
+		6BB37CC01F9EE49D004DC89B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RxAstroChannelsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nhung.RxAstroChannelsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RxAstroChannels;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BB37C8B1F9EE49C004DC89B /* Build configuration list for PBXProject "RxAstroChannels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BB37CB61F9EE49D004DC89B /* Debug */,
+				6BB37CB71F9EE49D004DC89B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BB37CB81F9EE49D004DC89B /* Build configuration list for PBXNativeTarget "RxAstroChannels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BB37CB91F9EE49D004DC89B /* Debug */,
+				6BB37CBA1F9EE49D004DC89B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BB37CBB1F9EE49D004DC89B /* Build configuration list for PBXNativeTarget "RxAstroChannelsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BB37CBC1F9EE49D004DC89B /* Debug */,
+				6BB37CBD1F9EE49D004DC89B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BB37CBE1F9EE49D004DC89B /* Build configuration list for PBXNativeTarget "RxAstroChannelsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BB37CBF1F9EE49D004DC89B /* Debug */,
+				6BB37CC01F9EE49D004DC89B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BB37C881F9EE49C004DC89B /* Project object */;
+}
